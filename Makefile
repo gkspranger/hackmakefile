@@ -16,7 +16,7 @@ arole = $(if $(strip $(role)),$(if $(filter $(role),$(ROLES)),$(role),),EMPTY)
 
 help:
 	@echo $(AVAIL_CMDS)
-	@./scripts/help.sh $(MAKEFILEFILE)
+	@$(MAKEFILEDIR)scripts/help.sh $(MAKEFILEFILE)
 
 # MKHLP: show make all help
 allhelp:
